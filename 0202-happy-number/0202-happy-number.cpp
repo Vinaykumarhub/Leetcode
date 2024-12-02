@@ -25,7 +25,8 @@ public:
                 sum+=pow(n%10,2);
                 n=n/10;
             }
-            if(map.find(sum)!=map.end()){
+         //f (or) map.second
+            if(map[sum]==2){
            return false; 
             }
             map[sum]++;
