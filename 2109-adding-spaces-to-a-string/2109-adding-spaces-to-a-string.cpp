@@ -5,8 +5,8 @@ public:
         unordered_map    O(n)  O(n)
         string matching  O(n+m) O(1)
         */
-        unordered_map<int,int>map;//intailly map is empty 
-        //            v   f
+        unordered_map<int,int>map;//empty
+        //             v   f
         int i;//index
         int n=s.size();//string size
         int m=spaces.size();
@@ -15,7 +15,7 @@ public:
             map[spaces[i]]=i;
         }
         string str="";
-        //the answer of the string stores in the str
+        //the answer of the string stores in str
         for(i=0;i<n;i++){
             if(map.find(i)!=map.end()){
                 str+=' ';
