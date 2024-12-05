@@ -7,15 +7,13 @@ public:
         */
         unordered_map<int,int>map;//empty
         //             v   f
-        int i;//index
-        int n=s.size();//string size
+        int n=s.size();
         int m=spaces.size();
-        //how many elements in spaces array
+        int i;//index
         for(i=0;i<m;i++){
             map[spaces[i]]=i;
         }
         string str="";
-        //the answer of the string stores in str
         for(i=0;i<n;i++){
             if(map.find(i)!=map.end()){
                 str+=' ';
